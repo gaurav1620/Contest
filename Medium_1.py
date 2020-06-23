@@ -11,5 +11,5 @@ def getWays(n, c):
         for i in range(coin, n + 1):
                 table[i] = table[i]+ table[i - coin]
     print(table) 
-    return max(table)
+    return table[n]
 
