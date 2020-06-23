@@ -46,7 +46,7 @@ int main(){
         string s;
         cin>>s;
 
-        if((s[i] - '0') & 1){
+        if((s[s.length()-1] - '0') & 1){
             odd++;
         }else{
             even++;
