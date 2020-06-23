@@ -52,9 +52,7 @@ int main(){
             even++;
         }
     }
-
     ll ans = even*odd;
     cout<<ans<<endl;
-
     return 0;
 }
