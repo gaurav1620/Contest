@@ -7,12 +7,16 @@
 
 
 #this gives TLE
+dp = [-1 for i in range(100)]
+
 def fib(f,s,n):
+    if dp[n] != -1:
+        return dp[n]
     if n == 1:
         return f
     if n == 2:
         return s
+    dp[n] =  fib(f,s,n-1)+fib(f,s,n-2)
+    return dp[n]
 
-    return fib(f,s,n-1)+fib(f,s,n-2)
-
-fib(10,20,50)
+print(fib(53,24,70))

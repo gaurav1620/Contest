@@ -26,17 +26,19 @@ int main(){
     inputFile.open("XOR_TestCase.txt",ios_base::app);
     
     ll f,s,n;
-    f = 53,s = 24,n = 50;
+    f = 53,s = 24,n = 70;
+    
+    cin>>f>>s>>n;
+
     ll dp[101];
-    dp[1] = 53;
-    dp[2] = 24;
+    dp[1] = f;
+    dp[2] = s;
 
     for(int i = 3;i <= n;i++){
         dp[i] = dp[i-1]+dp[i-2];
-
     }
     cout<<dp[n]<<endl;
 
-    cout<<fib(f,s,n)<<endl;
+    //cout<<fib(f,s,n)<<endl;
     return 0;
 }
