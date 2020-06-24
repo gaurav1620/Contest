@@ -37,6 +37,7 @@ Catch :
 int main(){
 
     ll n;
+    cin >>n;
     ll i,j,k;
     ll even,odd;
     
@@ -45,7 +46,6 @@ int main(){
     for(i = 0; i < n; i++){
         string s;
         cin>>s;
-
         if((s[s.length()-1] - '0') & 1){
             odd++;
         }else{
